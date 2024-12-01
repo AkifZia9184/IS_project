@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+  
+  /* RSAComponent Container */
+  .rsa-component {
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Styles */
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 30px;
+  }
+  
+  /* Key Generation Section */
+  .key-generation-section {
+    margin-bottom: 40px;
+  }
+  
+  .generate-keys-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .generate-keys-btn:hover {
+    background-color: #3498db;
+  }
+  
+  .generate-keys-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .keys-display {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #34495e;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encryption Section */
+  .encryption-section {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    margin-top: 10px;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #3498db;
+  }
+  
+  .encrypt-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .encrypt-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .encrypt-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Result Section */
+  .result-section {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #34495e;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  /* Decryption Section */
+  .decryption-section {
+    margin-top: 20px;
+  }
+  
+  .decrypt-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .decrypt-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .decrypt-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .rsa-component {
+      padding: 20px;
+    }
+  
+    input[type="text"] {
+      width: 90%;
+    }
+  
+    .generate-keys-btn, .encrypt-btn, .decrypt-btn {
+      width: 100%;
+    }
+  }
+  
